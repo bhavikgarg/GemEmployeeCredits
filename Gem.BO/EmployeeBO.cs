@@ -22,9 +22,10 @@ namespace Gem.BO
 
     public class EmployeeDetails : EmployeeMeta
     {
+        public Int64 EmployeeId { get; set; }
         public string FirstName { get; set; }
-        public string? MiddleName { get; set; }
-        public string? LastName { get; set; }
+        public string MiddleName { get; set; }
+        public string LastName { get; set; }
         public string ProfileImage { get; set; }
 
     }
@@ -34,5 +35,8 @@ namespace Gem.BO
         public Int16 DesignationId { get; set; }
     }
 
-    
+    public class EmployeeRegister : EmployeeBO
+    {
+        public string Password { get; set; }
+    }    
 }

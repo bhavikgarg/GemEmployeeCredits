@@ -301,6 +301,9 @@
     <Content Include="Content\iCheck\square\yellow.png" />
     <Content Include="Content\iCheck\square\_all.css" />
     <Content Include="Content\jQuery\jquery-2.2.3.min.js" />
+    <Content Include="Content\js\dashboard.js" />
+    <Content Include="Content\js\login.js" />
+    <Content Include="Content\js\register.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -315,7 +318,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Content\css\" />
     <Folder Include="Content\images\" />
-    <Folder Include="Content\js\" />
     <Folder Include="Controllers\Uploads\" />
     <Folder Include="Models\" />
   </ItemGroup>
@@ -341,6 +343,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\App\Register.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gem.Bll\Gem.Bll.csproj">
+      <Project>{bb595f1d-90e4-4aab-99f5-e60278f49f1b}</Project>
+      <Name>Gem.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gem.BO\Gem.BO.csproj">
+      <Project>{2b3e08e1-d3d2-42e7-9381-39c7de187be6}</Project>
+      <Name>Gem.BO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\App\Dashboard.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

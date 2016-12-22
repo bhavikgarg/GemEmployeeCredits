@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +43,16 @@
     <Compile Include="Class1.cs" />
     <Compile Include="EmployeeBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Gem.BO\Gem.BO.csproj">
+      <Project>{2b3e08e1-d3d2-42e7-9381-39c7de187be6}</Project>
+      <Name>Gem.BO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gem.Dll\Gem.Dll.csproj">
+      <Project>{b5339951-a9ea-4a6d-be99-6f551b8dea68}</Project>
+      <Name>Gem.Dll</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
